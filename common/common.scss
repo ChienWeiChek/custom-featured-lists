@@ -28,23 +28,26 @@
   }
 
   &__list-body {
-    display: flex !important;
-    /* Lay items out in a row */
-    flex-direction: row;
-    flex-wrap: nowrap;
-    /* Don't wrap to next line */
-    overflow-x: auto;
-    /* Enable left/right scroll */
-    overflow-y: hidden;
-    /* Hide vertical scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* Smooth scrolling on iOS */
-    scroll-snap-type: x mandatory;
+    .topic-list-body {
+      display: flex;
+      /* Lay items out in a row */
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* Don't wrap to next line */
+      overflow-x: auto;
+      /* Enable left/right scroll */
+      overflow-y: hidden;
+      /* Hide vertical scrolling */
+      -webkit-overflow-scrolling: touch;
+      /* Smooth scrolling on iOS */
+      scroll-snap-type: x mandatory;
 
-    tr {
-      width: 180px;
-      flex: 0 0 auto;
-      scroll-snap-align: start;
+      tr {
+        width: 180px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+      }
+
     }
 
     .topic-list-header,
