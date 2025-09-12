@@ -29,9 +29,9 @@
 
   &__list-body {
     .topic-list-body {
-      display: flex;
+      display: flex !important;
       /* Lay items out in a row */
-      flex-direction: row;
+      flex-direction: row !important;
       flex-wrap: nowrap;
       /* Don't wrap to next line */
       overflow-x: auto;
