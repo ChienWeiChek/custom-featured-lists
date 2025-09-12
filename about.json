@@ -1,7 +1,7 @@
 {
-  "name": "Featured Lists",
+  "name": "Custom Featured Lists",
   "component": true,
-  "authors": "",
+  "authors": "Jensen",
   "about_url": "",
   "license_url": "",
   "minimum_discourse_version": "3.2.0.beta3",
