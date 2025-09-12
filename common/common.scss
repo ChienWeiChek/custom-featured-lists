@@ -28,7 +28,7 @@
   }
 
   &__list-body {
-    display: flex;
+    display: flex !important;
     /* Lay items out in a row */
     flex-direction: row;
     flex-wrap: nowrap;
