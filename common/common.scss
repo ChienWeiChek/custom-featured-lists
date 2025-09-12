@@ -1,5 +1,4 @@
 .featured-lists {
-
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +8,10 @@
   &__list-container {
     flex: 1 1 100%;
     width: var(--d-max-width);
+
+    @include breakpoint(mobile-large) {
+      width: 100%
+    }
   }
 
   &__list-header {
@@ -45,6 +48,7 @@
 
       tr {
         width: 300px;
+
         @include breakpoint(mobile-large) {
           width: 180px !important;
         }
