@@ -46,7 +46,7 @@
       tr {
         width: 300px;
         @include breakpoint(mobile-large) {
-          height: 180px !important;
+          width: 180px !important;
         }
 
         flex: 0 0 auto;
