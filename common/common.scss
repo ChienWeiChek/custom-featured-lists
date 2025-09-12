@@ -45,6 +45,10 @@
 
       tr {
         width: 300px;
+        @include breakpoint(mobile-large) {
+          height: 180px !important;
+        }
+
         flex: 0 0 auto;
         scroll-snap-align: start;
       }
@@ -74,9 +78,14 @@
       }
 
       .main-thumbnail {
-        height: 300px !important;
+        height: 400px !important;
         border-top-left-radius: unset !important;
         border-top-right-radius: unset !important;
+
+        @include breakpoint(mobile-large) {
+          height: 250px !important;
+
+        }
       }
 
       .title {
