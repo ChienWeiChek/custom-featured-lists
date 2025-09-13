@@ -31,19 +31,12 @@
     }
   }
 
-  .topic-list {
-    @include breakpoint(mobile-large) {
-      margin-top: 0 !important;
-    }
-  }
-
-  .topic-cards-list {
-    @include breakpoint(mobile-large) {
-      margin-top: 0 !important;
-    }
-  }
 
   &__list-body {
+     @include breakpoint(mobile-large) {
+      margin-top: 0 !important;
+      padding: 0 !important;
+    }
     .topic-list-body {
       display: flex !important;
       /* Lay items out in a row */
