@@ -52,8 +52,7 @@
       scroll-snap-type: x mandatory;
 
       @include breakpoint(mobile-large) {
-        gap: 0.5rem !important;
-
+        gap: 0.25rem !important;
       }
 
       tr {
