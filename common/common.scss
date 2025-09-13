@@ -46,6 +46,11 @@
       /* Smooth scrolling on iOS */
       scroll-snap-type: x mandatory;
 
+      @include breakpoint(mobile-large) {
+        gap: 0.5rem !important;
+
+      }
+
       tr {
         width: 300px;
 
@@ -56,6 +61,19 @@
         flex: 0 0 auto;
         scroll-snap-align: start;
       }
+
+      .topic-list {
+        @include breakpoint(mobile-large) {
+          margin-top: 0 !important;
+        }
+      }
+
+      .topic-cards-list {
+        @include breakpoint(mobile-large) {
+          margin-top: 0 !important;
+        }
+      }
+
 
       .topic-card {
         border: unset;
