@@ -31,6 +31,18 @@
     }
   }
 
+  .topic-list {
+    @include breakpoint(mobile-large) {
+      margin-top: 0 !important;
+    }
+  }
+
+  .topic-cards-list {
+    @include breakpoint(mobile-large) {
+      margin-top: 0 !important;
+    }
+  }
+
   &__list-body {
     .topic-list-body {
       display: flex !important;
@@ -61,19 +73,6 @@
         flex: 0 0 auto;
         scroll-snap-align: start;
       }
-
-      .topic-list {
-        @include breakpoint(mobile-large) {
-          margin-top: 0 !important;
-        }
-      }
-
-      .topic-cards-list {
-        @include breakpoint(mobile-large) {
-          margin-top: 0 !important;
-        }
-      }
-
 
       .topic-card {
         border: unset;
