@@ -10,7 +10,7 @@
     width: var(--d-max-width);
 
     @include breakpoint(mobile-large) {
-      width: 100%
+      width: 100%;
     }
   }
 
@@ -31,12 +31,12 @@
     }
   }
 
-
   &__list-body {
-     @include breakpoint(mobile-large) {
+    @include breakpoint(mobile-large) {
       margin-top: 0 !important;
       padding: 0 !important;
     }
+
     .topic-list-body {
       display: flex !important;
       /* Lay items out in a row */
@@ -66,51 +66,63 @@
         scroll-snap-align: start;
       }
 
+      .topic-cards-list .topic-list-body .topic-card .main-link .title {
+        font-size: small;
+      }
+      @include breakpoint(mobile-large) {
+        .topic-cards-list .topic-list-body .topic-card .main-link .title {
+          font-size: smaller;
+        }
+
+        .topic-card .main-link .title {
+          line-clamp: 3;
+          max-height: 4em;
+        }
+      }
+
       .topic-card {
         border: unset;
         border-radius: unset;
         box-shadow: unset;
         border-bottom: unset;
       }
-
-      .main-link {
-        display: flex;
-        grid-template-areas: unset;
-
-        .topic-card__op,
-        .topic-card__excerpt,
-        .topic-card__metadata,
-        .link-bottom-line {
-          display: none !important;
-        }
-      }
-
-      .topic-card.selected,
-      .topic-card.hover {
-        border: unset;
-      }
-
-      .main-thumbnail {
-        height: 400px !important;
-        border-top-left-radius: unset !important;
-        border-top-right-radius: unset !important;
-
-        @include breakpoint(mobile-large) {
-          height: 250px !important;
-
-        }
-      }
-
-      .title {
-        font-size: small;
-      }
-
     }
 
-    .topic-list-header,
-    thead {
-      display: none;
+    .main-link {
+      display: flex;
+      grid-template-areas: unset;
+
+      .topic-card__op,
+      .topic-card__excerpt,
+      .topic-card__metadata,
+      .link-bottom-line {
+        display: none !important;
+      }
     }
+
+    .topic-card.selected,
+    .topic-card.hover {
+      border: unset;
+    }
+
+    .main-thumbnail {
+      height: 400px !important;
+      border-top-left-radius: unset !important;
+      border-top-right-radius: unset !important;
+
+      @include breakpoint(mobile-large) {
+        height: 250px !important;
+      }
+    }
+
+    .title {
+      font-size: small;
+    }
+  }
+
+  .topic-list-header,
+  thead {
+    display: none;
   }
 }
 

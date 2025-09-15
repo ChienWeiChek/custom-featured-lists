@@ -66,7 +66,9 @@ export default class FeaturedList extends Component {
       },
     });
     if (topicList.topics) {
-      return (this.filteredTopics = topicList.topics.slice(
+      // Shuffle the topics array before slicing
+      const shuffledTopics = [...topicList.topics].sort(() => Math.random() - 0.5);
+      return (this.filteredTopics = shuffledTopics.slice(
         0,
         this.args.list.length,
       ));
