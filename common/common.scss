@@ -69,8 +69,6 @@
       .topic-card .main-link .title {
         font-size: small !important;
         @include breakpoint(mobile-large) {
-          -webkit-line-clamp: 3;
-          max-height: 4em;
           font-size: x-small !important;
         }
       }
