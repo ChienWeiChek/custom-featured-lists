@@ -66,18 +66,12 @@
         scroll-snap-align: start;
       }
 
-      .topic-cards-list .topic-list-body .topic-card .main-link .title {
-        font-size: small;
-      }
-      @include breakpoint(mobile-large) {
-        .topic-cards-list .topic-list-body .topic-card .main-link .title {
-          font-size: smaller;
-        }
-
-        .topic-card .main-link .title {
-          -webkit-line-clamp: 2;
+      .topic-card .main-link .title {
+        font-size: small !important;
+        @include breakpoint(mobile-large) {
+          -webkit-line-clamp: 3;
           max-height: 4em;
-          font-size: smaller;
+          font-size: smaller !important;
         }
       }
 
