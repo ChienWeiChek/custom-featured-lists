@@ -71,7 +71,7 @@
         @include breakpoint(mobile-large) {
           -webkit-line-clamp: 3;
           max-height: 4em;
-          font-size: smaller !important;
+          font-size: x-small !important;
         }
       }
 
