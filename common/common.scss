@@ -78,6 +78,11 @@
         border-radius: unset;
         box-shadow: unset;
         border-bottom: unset;
+        @include breakpoint(mobile-large) {
+          .topic-card__tags {
+            display: none;
+          }
+        }
       }
     }
 
